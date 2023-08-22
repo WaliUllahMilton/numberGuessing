@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number Game</title>
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--css link-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--player one name-->
+    <div class="main name-one">
+      <div class="player-one player">
+        <h2>Player One</h2>
+        <input class="pl-one" type="text" placeholder="Enter your name" />
+        <button class="pl-one-name">Enter</button>
+      </div>
+    </div>
+    <!--player one Secret number-->
+    <div class="main input-one">
+      <div class="player-one-data player">
+        <h2 class="pl-one-display"></h2>
+        <input
+          class="secret-key"
+          type="text"
+          placeholder="Enter your Secret Number"
+        />
+        <p></p>
+        <button class="pl-one-data">Enter</button>
+      </div>
+    </div>
+
+    <!--player two name-->
+
+    <div class="main name-two">
+      <div class="player-one-data player">
+        <h2>Player Two</h2>
+        <input
+          class="pl-two"
+          type="text"
+          placeholder="Enter your Secret Number"
+        />
+        <button class="pl-two-name">Enter</button>
+      </div>
+    </div>
+    <!--player two Secret number-->
+    <div class="main input-two">
+      <div class="player-one-data player">
+        <h2 class="pl-two-display"></h2>
+        <p>Guess The Number</p>
+        <input
+          class="guess-key"
+          type="text"
+          placeholder="Enter your Secret Number"
+        />
+        <p class="result"></p>
+        <button class="pl-two-data">Enter</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
