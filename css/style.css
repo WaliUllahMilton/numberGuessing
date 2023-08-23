@@ -128,8 +128,6 @@ button {
     animation: guess 3s linear infinite;
 }
 
-.guess h3 {}
-
 @keyframes guess {
     0% {
         top: 80px;
