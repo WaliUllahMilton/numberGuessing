@@ -24,21 +24,24 @@ buttonOneName.addEventListener("click", function() {
     activePlayerOne.innerHTML = playerOneName;
     playerOneNumber.style.display = "inline-flex";
     buttonOneData.addEventListener("click", function() {
+
+        playerTwo.style.display = "inline-flex"
         let secretKey = key.value;
         if (secretKey <= 10 && secretKey > 0) {
             displayNone(playerOneNumber);
             buttonTwoName.addEventListener("click", () => {
+                playerTwoNumber.style.display = "inline-flex"
                 playerTwoName = playerTwoName.value;
                 displayNone(playerTwo);
                 activePlayerTwo.innerHTML = playerTwoName;
-                playerTwoNumber.style.display = "inline-flex"
                 buttonTwoData.addEventListener("click", () => {
+                    winner.style.display = "inline-flex"
                     let guessNumber = guessKey.value;
                     if (secretKey == guessNumber) {
-                        result.innerHTML = playerTwoName + " won";
+                        result.innerHTML = playerTwoName + " won the match";
                         playerTwoNumber.style.display = "none"
                     } else {
-                        result.innerHTML = playerOneName + " won";
+                        result.innerHTML = playerOneName + " won the match";
                         playerTwoNumber.style.display = "none"
                     }
                 })

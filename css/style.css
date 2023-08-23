@@ -11,9 +11,25 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 5px 16px;
+    text-transform: capitalize;
+    border-radius: 7px;
+}
+
+.again-btn {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+}
+
 h2 {
     font-size: 35px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 
@@ -21,6 +37,7 @@ h2 {
 
 body {
     background-color: crimson;
+    position: relative;
 }
 
 .main {
@@ -40,6 +57,7 @@ body {
     background-color: aquamarine;
     text-align: center;
     padding: 45px 0;
+    position: relative;
 }
 
 input {
@@ -47,11 +65,13 @@ input {
     width: 250px;
     height: 50px;
     margin: 20px auto;
+    text-transform: uppercase;
 }
 
 ::placeholder {
     text-align: center;
     padding: 5px;
+    text-transform: uppercase;
 }
 
 button {
@@ -76,27 +96,57 @@ button {
     display: none;
 }
 
+.result {
+    color: #f30ce7;
+    animation: result 5s linear infinite;
+}
+
+@keyframes result {
+    0% {
+        font-size: 25px;
+        ;
+    }
+    50% {
+        font-size: 35px;
+    }
+    100% {
+        font-size: 25px;
+    }
+}
+
 .name-two {
     display: none;
+    text-transform: uppercase;
 }
 
 .guess {
+    width: 100%;
     position: absolute;
     top: 80px;
+    left: 50%;
+    transform: translateX(-13%);
+    animation: guess 3s linear infinite;
 }
 
-.guess-two {
-    left: 0%;
-}
+.guess h3 {}
 
-.guess-one {
-    left: 100%;
+@keyframes guess {
+    0% {
+        top: 80px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 80px;
+    }
 }
 
 h1 {
     font-size: 20px;
     font-weight: 700;
     color: crimson;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -106,6 +156,7 @@ h3 {
     word-spacing: 30px;
     display: inline;
     margin-right: 150px;
+    text-transform: uppercase;
 }
 
 marquee {
