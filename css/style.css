@@ -7,7 +7,7 @@
 
 html,
 body {
-    width: 100%;
+    width: 1320px;
     height: 100%;
 }
 
@@ -120,11 +120,10 @@ button {
 }
 
 .guess {
-    width: 100%;
     position: absolute;
     top: 80px;
     left: 50%;
-    transform: translateX(-11%);
+    transform: translateX(-39%);
     animation: guess 3s linear infinite;
 }
 
@@ -149,7 +148,7 @@ h1 {
 
 h3 {
     color: #b5f30c;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 800;
     word-spacing: 30px;
     display: inline;
