@@ -16,6 +16,15 @@
   </head>
 
   <body>
+    <div class="guess">
+      <marquee behavior="altenative" direction="right">
+        <h3>GUESS THE NUMBER</h3>
+        <h3>GUESS THE NUMBER</h3>
+        <h3>GUESS THE NUMBER</h3>
+        <h3>GUESS THE NUMBER</h3>
+      </marquee>
+    </div>
+
     <!--player one name-->
     <div class="main name-one">
       <div class="player-one player">
@@ -43,11 +52,7 @@
     <div class="main name-two">
       <div class="player-one-data player">
         <h2>Player Two</h2>
-        <input
-          class="pl-two"
-          type="text"
-          placeholder="Enter your Secret Number"
-        />
+        <input class="pl-two" type="text" placeholder="Enter your Name" />
         <button class="pl-two-name">Enter</button>
       </div>
     </div>
@@ -61,8 +66,14 @@
           type="text"
           placeholder="Enter your Secret Number"
         />
-        <p class="result"></p>
+        <p class="gs-error"></p>
         <button class="pl-two-data">Enter</button>
+      </div>
+    </div>
+    <!--wining banner-->
+    <div class="main winner">
+      <div class="player-one-data player">
+        <h1 class="result"></h1>
       </div>
     </div>
 

@@ -34,8 +34,9 @@ body {
 
 .player {
     width: 400px;
+    border-radius: 10px;
     height: 300px;
-    border: 1px;
+    box-shadow: 20px 15px 50px 10px rgba(73, 182, 71, 0.253);
     background-color: aquamarine;
     text-align: center;
     padding: 45px 0;
@@ -50,7 +51,7 @@ input {
 
 ::placeholder {
     text-align: center;
-    padding: 5px 0;
+    padding: 5px;
 }
 
 button {
@@ -61,5 +62,56 @@ button {
 }
 
 .input {
+    display: none;
+    text-align: center;
+}
+
+.input-one {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.input-two {
+    display: none;
+}
+
+.name-two {
+    display: none;
+}
+
+.guess {
+    position: absolute;
+    top: 80px;
+}
+
+.guess-two {
+    left: 0%;
+}
+
+.guess-one {
+    left: 100%;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: crimson;
+}
+
+h3 {
+    color: #b5f30c;
+    font-size: 30px;
+    font-weight: 800;
+    word-spacing: 30px;
+    display: inline;
+    margin-right: 150px;
+}
+
+marquee {
+    display: flex;
+}
+
+.winner {
     display: none;
 }
